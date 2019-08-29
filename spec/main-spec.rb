@@ -42,5 +42,15 @@ RSpec.describe Board do
             @board.current_state = [["X","X","O"],["X","X","O"],["O","O","X"]]
             expect(@board.emptyCounter).to eql(0)
           end
+
+          it "checks for an empty board" do
+            @board.current_state = [["1,1","1,2","1,3"],["2,1","2,2","2,3"],["3,1","3,2","3,3"]]
+            expect(@board.emptyCounter).to eql(9)
+          end
+
+          it "checks for an empty board" do
+            @board.current_state = [["1,1","1,2","1,3"],["2,1","2,2","O"],["3,1","3,2","X"]]
+            expect(@board.emptyCounter).to eql(7)
+          end
         end
   end

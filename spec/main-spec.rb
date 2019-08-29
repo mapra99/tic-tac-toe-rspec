@@ -94,3 +94,11 @@ RSpec.describe Game do
     expect(@game.board.current_state[0][0]).not_to eql(initialValue)
   end
 end
+
+RSpec.describe Player do
+  it "checks if a player is being correctly created" do
+    pl = Player.new("X", "Ben")
+    expect(pl.name).to eql("Ben")
+    expect(pl.character).to eql("X")
+  end
+end

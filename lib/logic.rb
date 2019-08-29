@@ -31,7 +31,7 @@ class Board
   @current_state = [["1,1","2,1","3,1"],["1,2","2,2","3,2"],["1,3","2,3","3,3"]]
   end
 
-  def empty_counter
+  def emptyCounter
     counter = 0
     @current_state.each do |x|
       x.each do |y|

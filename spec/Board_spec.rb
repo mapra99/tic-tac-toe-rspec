@@ -1,4 +1,4 @@
-require "./lib/logic.rb"
+require_relative "../lib/logic.rb"
 
 RSpec.describe Board do
     before do

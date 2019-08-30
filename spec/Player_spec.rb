@@ -1,4 +1,4 @@
-require "./lib/logic.rb"
+require_relative "../lib/logic.rb"
 
 RSpec.describe Player do
     it "checks if a player is being correctly created" do

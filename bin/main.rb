@@ -35,13 +35,13 @@ require_relative '../lib/logic.rb'
 
      puts show(game)
    end
-   
-   if game.board.win_check(current.character) 
+
+   if game.board.win_check(current.character)
     puts "#{current.name} is the victor!"
    else
     game.board.empty_counter == 0
     puts "Draw!"
-     
+
    end
   end
 

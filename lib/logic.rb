@@ -73,7 +73,7 @@ class Game
    end
 
   def turn(current_move, player_character)
-    if current_move.match('[1-3],[1-3]').nil?
+    if current_move.match('^[1-3],[1-3]$').nil?
       @valid_move = false
     else
       @valid_move = true

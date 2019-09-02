@@ -38,7 +38,7 @@ class Board
     counter = 0
     @current_state.each do |x|
       x.each do |y|
-        counter += 1 unless ["X","Y"].include?(y)
+        counter += 1 unless ["X","O"].include?(y)
       end
     end
 
@@ -91,5 +91,5 @@ class Game
      end
    end
 
-    
+
   end
